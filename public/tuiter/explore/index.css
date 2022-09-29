@@ -1,0 +1,80 @@
+#text-box {
+  border-radius: 50px;
+  width: 100%;
+  background-color: darkgray;
+  color: white;
+}
+
+#gear-image {
+  width: 20px;
+  height: 20px;
+}
+
+#search-bar {
+  float: left;
+  height: 40px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+#gear {
+  float: left;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.wd-highlighted-link {
+  float: left;
+  color: rgb(29,161,242);
+  border-bottom: 5px solid rgb(29,161,242);
+  font-size: 15px;
+  padding: 16px;
+}
+
+.wd-not-highlighted-link {
+  float: left;
+  color: rgb(110,118,125);
+  font-size: 15px;
+  padding: 16px;
+}
+
+.wd-suggested {
+  line-height: 5px;
+  margin-left: 16px;
+}
+
+.wd-small-grey-text {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-white_text {
+  color: white;
+  text-align: justify;
+}
+
+.wd-with_image {
+  line-height: 10px;
+  text-align: justify;
+  height: 120px;
+  margin-left: 16px;
+}
+
+.wd-author {
+  font-size: 13px;
+  color: white;
+  text-align: justify;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-right: 16px;
+  border-radius: 10px;
+}

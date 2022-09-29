@@ -1,0 +1,12 @@
+* {
+  background-color: black;
+}
+
+.wd-border-color {
+  border: solid 1px rgb(47, 51, 54);
+  overflow: hidden;
+}
+
+.wd-reset {
+  clear: both;
+}
