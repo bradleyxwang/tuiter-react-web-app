@@ -5,81 +5,208 @@
   <title>Explore</title>
   <link href="index.css"
         rel="stylesheet"/>
-  <link href="../styles.css"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         rel="stylesheet"/>
 </head>
-<body>
-<div class="wd-border-color">
-  <div id="search-bar">
-    <input type="text" id="text-box" placeholder="Search Tuiter">
-  </div>
-  <div id="gear">
-    <a href="explore-settings.html"><img id="gear-image" src="gear.jpg"/></a>
-  </div>
-  <br>
+<body class="mt-2">
 
-  <div class="wd-reset">
-    <div class="wd-highlighted-link">
-      <h3>For you</h3>
-    </div>
-    <div class="wd-not-highlighted-link">
-      <h3>Trending</h3>
-    </div>
-    <div class="wd-not-highlighted-link">
-      <h3>COVID-19</h3>
-    </div>
-    <div class="wd-not-highlighted-link">
-      <h3>News</h3>
-    </div>
-    <div class="wd-not-highlighted-link">
-      <h3>Sports</h3>
-    </div>
-    <div class="wd-not-highlighted-link">
-      <h3>Entertainment</h3>
-    </div>
+<div class="row">
+  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+    <row>
+      <div class="col-xxl-7 col-xl-7 col-lg-4 col-md-5 col-sm-5 col-4 wd-left-element">
+        <ul class="list-group">
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fab fa-twitter wd-float-left"></i>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-house wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Home</span>
+            </div>
+          </li>
+          <li class="list-group-item active pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-hashtag wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Explore</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-bell wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Notifications</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-envelope wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Messages</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-bookmark wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Bookmarks</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-list wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Lists</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-user wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;Profile</span>
+            </div>
+          </li>
+          <li class="list-group-item pt-4">
+            <div class="position-absolute top-50 translate-middle-y">
+              <i class="fa fa-ellipsis wd-float-left"></i>
+              <span class="d-none d-xl-block wd-float-left">&nbsp;More</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </row>
+    <div class="wd-reset"></div>
+    <row>
+      <div class="col-xxl-7 col-xl-7 col-lg-4 col-md-5 col-sm-5 col-5 wd-left-element">
+        <button class="btn btn-primary override-bs mt-2">
+          Tweet
+        </button>
+      </div>
+    </row>
+
   </div>
+  <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-8 col-8 mb-2">
+    <div id="search-bar">
+      <i class="fa fa-search ms-2"></i>
+      <input type="text" class="ms-3" id="text-box" placeholder="Search Twitter">
+    </div>
+    <div id="gear">
+      <a href="explore-settings.html">
+        <img id="gear-image" src="gear.jpg"/></a>
+    </div>
+    <div class="wd-reset"></div>
 
-  <div class="wd-reset">
-    <hr class="wd-border-color">
-    <hr class="wd-border-color">
-    <div class="wd-suggested">
-      <p class="wd-small-grey-text">Trending in Science</p>
-      <p class="wd-white_text">Starship</p>
-      <p class="wd-small-grey-text">55.5K Tweets</p>
-    </div>
-    <hr class="wd-border-color">
-    <div class="wd-suggested">
-      <p class="wd-small-grey-text">Sports Trending</p>
-      <p class="wd-white_text">Joe Rogan</p>
-      <p class="wd-small-grey-text">5,218 Tweets</p>
-    </div>
-    <hr class="wd-border-color">
-    <div class="wd-with_image">
-      <img src="cuomo.jpg">
-      <p class="wd-author">The New York Times</p>
-      <p class="wd-white_text">CNN's Cuomo conundrum: A star anchor with a brother in trouble</p>
-    </div>
-    <hr class="wd-border-color">
-    <div class="wd-with_image">
-      <img src="vaccine.jpg">
-      <p class="wd-author">Bloomberg Opinion</p>
-      <p class="wd-white_text">Thinking about getting a booster? Read this first.</p>
-    </div>
-    <hr class="wd-border-color">
-    <div class="wd-with_image">
-      <img src="covid.jpg">
-      <p class="wd-small-grey-text">COVID-19 LIVE</p>
-      <p class="wd-white_text">COVID-19: News and updates for Massachusetts</p>
-    </div>
-    <hr class="wd-border-color">
-    <div class="wd-with_image">
-      <img src="pokemon.jpg">
-      <p class="wd-small-grey-text">New Pokemon Expansion</p>
-      <p class="wd-white_text">Pokemon Blue and Green is now out!</p>
+    <ul class="nav nav-tabs mt-2">
+      <li class="nav-item">
+        <a class="nav-link active" href="for-you.html">For you</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trending.html">Trending</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="news.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sports.html">Sports</a>
+      </li>
+      <li class="nav-item d-none d-md-block">
+        <a class="nav-link" href="entertainment.html">Entertainment</a>
+      </li>
+    </ul>
+    <div class="wd-reset"></div>
+
+    <div class="card mt-2" style="width: 100%;">
+      <div id="image-container">
+        <img src="starship.jpg"
+             class="card-img-top" alt="...">
+        <div class="bottom-left">
+          <h3>SpaceX's Starship</h3>
+        </div>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item wd-suggested pt-2 pb-2 ps-2">
+          <img src="react.jpg" class="wd-image-feed">
+          <div class="wd-topic">Web Development</div>
+          <div class="wd-title">ReactJS <i class="fa-solid fa-check"></i> <span class="wd-topic">-2h</span></div>
+          <div class="wd-regular-text">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</div>
+        </li>
+        <li class="list-group-item wd-suggested pt-2 pb-2 ps-2">
+          <img src="js.jpg" class="wd-image-feed">
+          <div class="wd-title">JavaScript <i class="fa-solid fa-check"></i> <span class="wd-topic">-2h</span></div>
+          <div class="wd-regular-text">Javascript is programming language that can run on browsers as well as desktops</div>
+          <div class="wd-topic">123K Tweets</div>
+        </li>
+        <li class="list-group-item wd-suggested pt-2 pb-2 ps-2">
+          <img src="jquery.jpg" class="wd-image-feed">
+          <div class="wd-topic">Web Development</div>
+          <div class="wd-regular-text">jQuery</div>
+          <div class="wd-topic">123K Tweets</div>
+        </li>
+        <li class="list-group-item wd-suggested pt-2 pb-2 ps-2">
+          <img src="nodejs.jpg" class="wd-image-feed">
+          <div class="wd-topic">Web Development</div>
+          <div class="wd-title">NodeJS <i class="fa-solid fa-check"></i> <span class="wd-topic">-2h</span></div>
+          <div class="wd-topic">123K Tweets</div>
+        </li>
+      </ul>
     </div>
 
+  </div>
+  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-1 col-sm-1 col-1 d-none d-lg-block">
+      <ul class="list-group wd-right-element">
+        <li class="list-group-item"><span class="wd-table-head">Who to follow</span></li>
+        <li class="list-group-item">
+          <img src="java.jpg" class="wd-profile-avatar">
+          <button class="btn btn-primary override-bs2">
+            Follow
+          </button>
+          <div class="wd-float-left">
+            <div class="wd-title">Java <i class="fa-solid fa-check"></i></div>
+            <div class="wd-topic">@Java</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="relativityspace.jpg" class="wd-profile-avatar">
+          <button class="btn btn-primary override-bs2">
+            Follow
+          </button>
+          <div class="wd-float-left">
+            <div class="wd-title">Relativity Space <i class="fa-solid fa-check"></i></div>
+            <div class="wd-topic">@relativityspace</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="virgin.jpg" class="wd-profile-avatar">
+          <button class="btn btn-primary override-bs2">
+            Follow
+          </button>
+          <div class="wd-float-left">
+            <div class="wd-title">Virgin Galactic <i class="fa-solid fa-check"></i></div>
+            <div class="wd-topic">@virgingalatic</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="NASA.jpg" class="wd-profile-avatar">
+          <button class="btn btn-primary override-bs2">
+            Follow
+          </button>
+          <div class="wd-float-left">
+            <div class="wd-title">NASA <i class="fa-solid fa-check"></i></div>
+            <div class="wd-topic">@NASA</div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <img src="tesla.jpg" class="wd-profile-avatar">
+          <button class="btn btn-primary override-bs2">
+            Follow
+          </button>
+          <div class="wd-float-left">
+            <div class="wd-title">Tesla <i class="fa-solid fa-check"></i></div>
+            <div class="wd-topic">@Tesla</div>
+          </div>
+        </li>
+      </ul>
   </div>
 </div>
+
 
 </body>
 </html>

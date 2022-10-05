@@ -1,8 +1,24 @@
+.wd-left-element {
+  float: right;
+}
+
+.wd-reset {
+  clear: both;
+}
+
+.fa, .fab {
+  float: left;
+}
+
+.d-none {
+  font-size: 11px;
+}
+
 #text-box {
-  border-radius: 50px;
-  width: 100%;
-  background-color: darkgray;
-  color: white;
+  width: 85%;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 #gear-image {
@@ -13,68 +29,92 @@
 #search-bar {
   float: left;
   height: 40px;
-  width: 80%;
+  width: 85%;
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  border-radius: 50px;
+  border: 1px solid;
 }
 
 #gear {
   float: left;
   height: 40px;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
 }
 
-.wd-highlighted-link {
-  float: left;
-  color: rgb(29,161,242);
-  border-bottom: 5px solid rgb(29,161,242);
-  font-size: 15px;
-  padding: 16px;
+.nav-item {
+  font-size: 11px;
 }
 
-.wd-not-highlighted-link {
-  float: left;
-  color: rgb(110,118,125);
-  font-size: 15px;
-  padding: 16px;
+.btn-primary.override-bs {
+  border-radius: 50px;
+  min-width: 67px;
+  width: 100%
+}
+
+#image-container {
+  position: relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  color: white;
+}
+
+.wd-topic {
+  color: darkgray;
+  font-size: 10px;
+}
+
+.wd-title {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.wd-regular-text {
+  font-size: 11px;
+  font-weight: bold;
 }
 
 .wd-suggested {
-  line-height: 5px;
-  margin-left: 16px;
+  align-items: center
 }
 
-.wd-small-grey-text {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-white_text {
-  color: white;
-  text-align: justify;
-}
-
-.wd-with_image {
-  line-height: 10px;
-  text-align: justify;
-  height: 120px;
-  margin-left: 16px;
-}
-
-.wd-author {
-  font-size: 13px;
-  color: white;
-  text-align: justify;
-}
-
-img {
-  width: 100px;
-  height: 100px;
+.wd-image-feed {
+  height: 90px;
+  width: 90px;
+  border-radius: 25px;
   float: right;
-  margin-right: 16px;
-  border-radius: 10px;
+}
+
+.wd-right-element {
+  width: 70%;
+}
+
+.wd-table-head {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wd-profile-avatar {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin-right: 2px;
+}
+
+.btn-primary.override-bs2 {
+  border-radius: 50px;
+  float: right;
+  margin-left: -100%;
+}
+
+.wd-float-left {
+  float: left;
 }
