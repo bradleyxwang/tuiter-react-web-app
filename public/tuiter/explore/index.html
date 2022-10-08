@@ -84,13 +84,15 @@
 
   </div>
   <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-8 col-8 mb-2">
-    <div id="search-bar">
-      <i class="fa fa-search ms-2"></i>
-      <input type="text" class="ms-3" id="text-box" placeholder="Search Twitter">
-    </div>
-    <div id="gear">
-      <a href="explore-settings.html">
-        <img id="gear-image" src="gear.jpg"/></a>
+    <div class="row g-0">
+      <div class="col-10 position-relative" id="search-bar">
+        <i class="fa fa-search position-absolute top-50 translate-middle-y ms-2"></i>
+        <input type="text" class="position-absolute top-50 translate-middle-y ms-5" id="text-box" placeholder="Search Twitter">
+      </div>
+      <div class="col-2 position-relative">
+        <a href="explore-settings.html">
+          <img id="gear-image" class="position-absolute top-50 translate-middle-y ms-2" src="gear.jpg"/></a>
+      </div>
     </div>
     <div class="wd-reset"></div>
 
@@ -117,9 +119,7 @@
       <div id="image-container">
         <img src="starship.jpg"
              class="card-img-top" alt="...">
-        <div class="bottom-left">
-          <h3>SpaceX's Starship</h3>
-        </div>
+        <h3 class="position-absolute bottom-0 ms-2 text-white w-100">SpaceX's Starship</h3>
       </div>
       <ul class="list-group">
         <li class="list-group-item wd-suggested pt-2 pb-2 ps-2">
@@ -151,10 +151,11 @@
 
   </div>
   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-1 col-sm-1 col-1 d-none d-lg-block">
+    <div class="wd-reset"></div>
       <ul class="list-group wd-right-element">
         <li class="list-group-item"><span class="wd-table-head">Who to follow</span></li>
         <li class="list-group-item">
-          <img src="java.jpg" class="wd-profile-avatar">
+          <img src="java.jpg" class="wd-profile-avatar ms-2">
           <button class="btn btn-primary override-bs2">
             Follow
           </button>
@@ -164,7 +165,7 @@
           </div>
         </li>
         <li class="list-group-item">
-          <img src="relativityspace.jpg" class="wd-profile-avatar">
+          <img src="relativityspace.jpg" class="wd-profile-avatar ms-2">
           <button class="btn btn-primary override-bs2">
             Follow
           </button>
@@ -174,7 +175,7 @@
           </div>
         </li>
         <li class="list-group-item">
-          <img src="virgin.jpg" class="wd-profile-avatar">
+          <img src="virgin.jpg" class="wd-profile-avatar ms-2">
           <button class="btn btn-primary override-bs2">
             Follow
           </button>
@@ -184,7 +185,7 @@
           </div>
         </li>
         <li class="list-group-item">
-          <img src="NASA.jpg" class="wd-profile-avatar">
+          <img src="NASA.jpg" class="wd-profile-avatar ms-2">
           <button class="btn btn-primary override-bs2">
             Follow
           </button>
@@ -194,7 +195,7 @@
           </div>
         </li>
         <li class="list-group-item">
-          <img src="tesla.jpg" class="wd-profile-avatar">
+          <img src="tesla.jpg" class="wd-profile-avatar ms-2">
           <button class="btn btn-primary override-bs2">
             Follow
           </button>
