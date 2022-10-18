@@ -7,45 +7,45 @@ const NavigationSidebar = (
 ) => {
   return (
       <div className="list-group">
-        <a className="list-group-item" href={""}>Tuiter</a>
+        <a className="list-group-item" href={"/"}>Tuiter</a>
         <a className={`list-group-item
                     ${active === 'home'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Home
         </a>
         <a className={`list-group-item
                     ${active === 'explore'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Explore
         </a>
         <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Notifications
         </a>
         <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Messages
         </a>
         <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Bookmarks
         </a>
         <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Lists
         </a>
         <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}
-           href={""}>
+           href={"/"}>
           Profile
         </a>
         <a className={`list-group-item
                     ${active === 'more'?'active':''}`}
-           href={""}>
+           href={"/"}>
           More
         </a>
       </div>
