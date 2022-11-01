@@ -1,53 +1,64 @@
-import React from "react";
+import React, {useState} from "react";
+import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
-const NavigationSidebar = (
-    {
-      active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+  const [activeItem, setActiveItem] = useState({active: 'home'});
+
+  const changeActive = (newActive) => {
+    setActiveItem({active: newActive});
+  }
+
   return (
       <div className="list-group">
-        <a className="list-group-item" href={"/"}>Tuiter</a>
-        <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}
-           href={"/"}>
+        <span className="list-group-item">Tuiter</span>
+        <Link className={`list-group-item
+                    ${activeItem.active === 'home'?'active':''}`}
+              onClick={() => {
+                changeActive('home')
+              }}
+              to="/tuiter">
           Home
-        </a>
-        <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}
-           href={"/"}>
+        </Link>
+        <Link className={`list-group-item
+                    ${activeItem.active === 'explore'?'active':''}`}
+
+              onClick={() => {
+                changeActive('explore')
+              }}
+              to="/tuiter/explore">
           Explore
-        </a>
-        <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`}
-           href={"/"}>
+        </Link>
+        <span className={`list-group-item
+                    ${activeItem.active === 'notifications'?'active':''}`}
+           href={"/tuiter"}>
           Notifications
-        </a>
-        <a className={`list-group-item
-                    ${active === 'messages'?'active':''}`}
-           href={"/"}>
+        </span>
+        <span className={`list-group-item
+                    ${activeItem.active === 'messages'?'active':''}`}
+           href={"/tuiter"}>
           Messages
-        </a>
-        <a className={`list-group-item
-                    ${active === 'bookmarks'?'active':''}`}
-           href={"/"}>
+        </span>
+        <span className={`list-group-item
+                    ${activeItem.active === 'bookmarks'?'active':''}`}
+           href={"/tuiter"}>
           Bookmarks
-        </a>
-        <a className={`list-group-item
-                    ${active === 'lists'?'active':''}`}
-           href={"/"}>
+        </span>
+        <span className={`list-group-item
+                    ${activeItem.active === 'lists'?'active':''}`}
+           href={"/tuiter"}>
           Lists
-        </a>
-        <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}
-           href={"/"}>
+        </span>
+        <span className={`list-group-item
+                    ${activeItem.active === 'profile'?'active':''}`}
+           href={"/tuiter"}>
           Profile
-        </a>
-        <a className={`list-group-item
-                    ${active === 'more'?'active':''}`}
-           href={"/"}>
+        </span>
+        <span className={`list-group-item
+                    ${activeItem.active === 'more'?'active':''}`}
+           href={"/tuiter"}>
           More
-        </a>
+        </span>
       </div>
   );
 };
