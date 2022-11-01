@@ -1,6 +1,4 @@
-import Nav from "../../nav";
 import React, {useState} from "react";
-const ewq = ['qu','wf','eh','iu','tb']
 function HelloWorld() {
   const [e, f] = useState(true)
   return(
