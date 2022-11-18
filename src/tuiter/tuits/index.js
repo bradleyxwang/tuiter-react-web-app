@@ -9,9 +9,9 @@ const TuitsList = () => {
   const {tuits, loading} = useSelector(
       state => state.tuitsData)
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(findTuitsThunk())
-  })
+  //eslint-disable-next-line
+  useEffect(() => {dispatch(findTuitsThunk())}, []);
+
   return(
       <ul className="list-group">
         {
@@ -24,6 +24,8 @@ const TuitsList = () => {
           tuits.map(post =>
               <Tuit
                   key={post._id} post={post}/> )
+
+
         }
       </ul>
   );

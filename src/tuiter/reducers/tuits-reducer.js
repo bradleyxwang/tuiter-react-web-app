@@ -21,17 +21,18 @@ const templateTuit = {
   "replies": 0,
   "retuits": 0,
   "likes": 0,
+  "dislikes": 0
 }
 
 const tuitsSlice = createSlice({
   name: 'tuits',
   initialState,
   extraReducers: {
-    [findTuitsThunk.pending]:
-        (state) => {
-          state.loading = true
-          state.tuits = []
-        },
+      [findTuitsThunk.fulfilled]:
+          (state, { payload }) => {
+            state.loading = false;
+            state.tuits = payload
+          },
     [deleteTuitThunk.fulfilled]:
         (state, {payload}) => {
           state.loading = false
