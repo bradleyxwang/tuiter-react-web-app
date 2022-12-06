@@ -19,7 +19,7 @@ const templateTuit = {
   "time": "2h",
   "liked": false,
   "replies": 0,
-  "retuits": 0,
+  "retuits": 1,
   "likes": 0,
   "dislikes": 0
 }
