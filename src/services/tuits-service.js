@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE = "https://tuiter-node-server-app-bradley.herokuapp.com/api";
+const API_BASE = "https://a9-server-app.onrender.com/api";
 const TUITS_API = `${API_BASE}/tuits`;
 
 export const createTuit = async (tuit) => {
